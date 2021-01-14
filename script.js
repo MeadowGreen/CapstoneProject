@@ -228,3 +228,13 @@ function alertFunc() {
   });
 
 })(jQuery);
+
+//Search Bar
+function searchOutput() {
+  document.getElementById("output").innerHTML = "No Results";
+}
+
+//Donation form
+function donation(){
+  alert("Thank you for submitting your form!\nCall us at 623-123-456 or email us at natureAspect@gmail.com\nto notify our staff of your donation. \nIF an animal donation, let us know the date and time of animal drop off");
+}
