@@ -86,3 +86,12 @@ body {
         font-weight: bold;
         font-size: larger;
     }
+
+    #carouselExampleDark{
+        margin-left: 25%;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    .card{
+        padding: 7%;
+    }

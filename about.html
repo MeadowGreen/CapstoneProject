@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
+    <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="Gp/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
     <link rel="shortcut icon" href="assets/icons/logo_small.jpg" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script>
     <link href="Gp/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="Gp/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="Gp/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -29,7 +32,7 @@
         <nav class="nav-menu d-none d-lg-block">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="#gallery.html">Gallery</a></li>
@@ -51,125 +54,310 @@
             <div class="col-xl-2 col-md-4 col-6">
               <div class="icon-box">
                 <i class="ri-vip-line"></i>
-                <h3><a href="#tours">Honesty</a></h3>
+                <h3><a href="#honesty">Honesty</a></h3>
               </div>
             </div>
             <div class="col-xl-2 col-md-4 col-6 ">
               <div class="icon-box">
                 <i class="ri-plane-line"></i>
-                <h3><a href="#boarding">Respect</a></h3>
+                <h3><a href="#respect">Respect</a></h3>
               </div>
             </div>
             <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-0">
               <div class="icon-box">
                 <i class="ri-home-heart-line"></i>
-                <h3><a href="#adoption">Service</a></h3>
+                <h3><a href="#services">Service</a></h3>
               </div>
             </div>
             <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
               <div class="icon-box">
                 <i class="ri-hearts-line"></i>
-                <h3><a href="#petting">Compassion</a></h3>
+                <h3><a href="#compassion">Compassion</a></h3>
               </div>
             </div>
             <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
-              <div class="icon-box">3
+              <div class="icon-box">
                 <i class="ri-hand-heart-line"></i>
-                <h3><a href="#donation">Integrity</a></h3>
+                <h3><a href="#integrity">Integrity</a></h3>
               </div>
             </div>
         </div>
 
-    </section><!-- End Hero -->
+    </section>
+
     <main id="main">
 
-        <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h2>Team</h2>
-            <p>Check our Team</p>
+      <!--Information Carousel Section-->
+      <section id="info" class="info">
+        <div id="carouselExampleDark" class="carousel slide text-center carousel-dark" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="card" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Nature Aspect</h5>
+                  <p class="card-text">Nature Aspect is a utopia for every and any animal.
+                    Whether orphaned, sick, injured, or simply donated to the sanctuary,
+                    our goal is to create a loving and safe environment for animals in need of a home.
+                    Animals ranging from wild bears to the smallest guinea pigs are welcomed.
+                    While also servicing animals, we provide supplies such as food, enrichment,
+                    and bedding for purchase as well as tours of our sanctuary.
+                    Tours range from basic group tours, to in depth personalized tours.
+                    </p>
+                  <a href="#team" class="card-link">Meet Our Team</a>
+                  <a href="services.html" class="card-link">Our Services</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="card" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Our Goal</h5>
+                  <p class="card-text">We strive to create a loving and safe environment
+                    for animals in need of a home. Vets and animal specialists ensure
+                    ensure the animals health and happiness, while other staff 
+                    keep customers happy and the sanctuary clean.
+                  </p>
+                  <a href="contact.html" class="card-link">Contact</a>
+                  <a href="gallery.html" class="card-link">Gallery</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Our Vision</h5>
+                  <p class="card-text">In the future the company will be the go to place for animal supplies,
+                    adopting rehabilitated pets, fun tours, and donating unwanted animals.
+                    We hope to inspire people to care about animals and the world around them. 
+                     </p>
+                  <h6 class="card-subtitle mb-2 text-muted">Links to Donations</h6>
+                  <a href="https://support.nwf.org/page/21250/donate/1?ea.tracking.id=SRC&gclid=Cj0KCQiA3Y-ABhCnARIsAKYDH7tTka4uvyEffYNz30Xf4j-NOCdq-cJYxKSQU_1h0-nDgdqhziJ7DEMaAoghEALw_wcB" class="card-link">The NWF</a>
+                  <a href="https://secure.aspca.org/donate/ps-gn-p2?ms=MP_PMK_Googlenonbrand-T4&initialms=MP_PMK_Googlenonbrand-T4&pcode=WPSE9XXGOGN2PK00024&lpcode=WPSE9XXGOGN1PK00024&test&ds_rl=1066464&gclid=Cj0KCQiA3Y-ABhCnARIsAKYDH7uFX5xdgSAKA_j28xGvPPZB3O2lsFR6XTTCwmqOkT16WvjTLJ2ZUn4aAtidEALw_wcB&gclsrc=aw.ds" class="card-link">ASPCA</a>
+                </div>
+              </div>
+            </div>
           </div>
-  
-          <div class="row">
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="icofont-twitter"></i></a>
-                    <a href=""><i class="icofont-facebook"></i></a>
-                    <a href=""><i class="icofont-instagram"></i></a>
-                    <a href=""><i class="icofont-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="200">
-                <div class="member-img">
-                  <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="icofont-twitter"></i></a>
-                    <a href=""><i class="icofont-facebook"></i></a>
-                    <a href=""><i class="icofont-instagram"></i></a>
-                    <a href=""><i class="icofont-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img">
-                  <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="icofont-twitter"></i></a>
-                    <a href=""><i class="icofont-facebook"></i></a>
-                    <a href=""><i class="icofont-instagram"></i></a>
-                    <a href=""><i class="icofont-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="400">
-                <div class="member-img">
-                  <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="icofont-twitter"></i></a>
-                    <a href=""><i class="icofont-facebook"></i></a>
-                    <a href=""><i class="icofont-instagram"></i></a>
-                    <a href=""><i class="icofont-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-  
+          <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
         </div>
-      </section><!-- End Team Section -->
+      </section> <!--Information Carousel Section end-->
+
+
+        <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" data-aos="fade-right" data-aos-delay="100">
+            <img src="./assets/images/cow_count.jpg" class="img-fluid" alt="Cow and kids" width="100%" height="100%">
+          </div>
+          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Interesting Facts</h3>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-simple-smile"></i>
+                    <span data-toggle="counter-up">250</span>
+                    <p><strong>Species and more!</strong> Here at Natural Aspect we love each and every animal, we will provide a loving home to any animal that walks through
+                    our gates.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-document-folder"></i>
+                    <span data-toggle="counter-up">85</span>
+                    <p><strong>Workers</strong> are apart of our dedicated and loving team. Our main priority is our animals health, therefore we need many staff members and are always looking 
+                    for new members. Just call and ask about our openings.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-clock-time"></i>
+                    <span data-toggle="counter-up">30</span>
+                    <p><strong>Years of experience</strong> in the industry, taking care of sick and injured animals and providing entertainment and information to the public.
+                     We provide many services and love doing it! As long as animals walk this earth Nature Aspect will continue to serve and protect wildlife. 
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-award"></i>
+                    <span data-toggle="counter-up">20</span>
+                    <p><strong>School field trips</strong> a month. Our vision is to encourage people to love and take care of wildlife and the world around them.
+                     Nature is very important to not only our lives but to the ecosystems around us. We love to educate children and to help fuel passions for nature!</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="./assets/images/testimonial1.jpg" class="testimonial-img" alt="">
+            <h3>Jack Goodman</h3>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I just can't get enough of this place. I want to get a T-Shirt with Nature Aspect on it so I can show it off to everyone.
+               Thanks to this business, we've just adopted our newest family member, Fido!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="./assets/images/testimonial2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              This company is truly upstanding and is behind its vision and mission 100%. Thank you guys so much for your hardwork and dedication.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="./assets/images/testimonial3.jpg" class="testimonial-img" alt="">
+            <h3>Carla Johnson</h3>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              "This is simply unbelievable! Nature Aspect should be nominated for service of the year. Very enjoyable place and I trust them 100% with my pets when I'm away. "
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="./assets/images/testimonial4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I would like to say thank you to all your staff. Everyone at Nature Aspect are hard workers who care about their customers and their animals.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="./assets/images/testimonial5.jpg" class="testimonial-img" alt="">
+            <h3>Zack Gonzalez</h3>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I was amazed at the kindness generosity. If you aren't sure, always go to Nature Aspect for all of your pet needs. Thanks guys, keep up the good work!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Check our Team</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="Gp/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="Gp/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Johanson</h4>
+                <span>Veterinarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="Gp/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Veterinarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="Gp/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Animal Specialtist</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
 
     <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -245,7 +433,7 @@
     <script src="Gp/assets/vendor/counterup/counterup.min.js"></script>
     <script src="Gp/assets/vendor/aos/aos.js"></script>
     <script src="Gp/assets/js/main.js"></script>
-
+    <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
