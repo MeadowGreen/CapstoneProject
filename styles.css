@@ -95,3 +95,9 @@ body {
     .card{
         padding: 7%;
     }
+    .featurette-divider{
+        margin-left: 40%;
+    }
+    #contact_click a:hover {
+        color: #ffc451;
+    }
