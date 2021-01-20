@@ -3,7 +3,7 @@ html, body {
     overflow-x: hidden;
 }
 .background-image-container{
-    width: 100%;
+  width: 100%;
   height: 100vh;
   background:url("./assets/images/bird_title.jpg") top center;
   background-size: cover;
@@ -16,6 +16,7 @@ html, body {
 .image {
     float: right;
 }
+/*Map styles*/
 .map {
     border-color: black;
     border-width: 50px;
@@ -26,133 +27,133 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
 }
+/*Every link changes color when hovered over*/
+a:hover {
+  color: #ffd584;
+  text-decoration: none;
+}
 
-  a:hover {
-    color: #ffd584;
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
 
-  /* Search Bar */
-  
+/* Search Bar */
+.search-container {
+  overflow: hidden;
+  background: #ddd;
+  height: 40%;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px solid black;
+  background: #ddd;
+}
+
+.search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+/*Responsive code*/
+@media screen and (max-width: 600px) {
   .search-container {
-    overflow: hidden;
-    background: #ddd;
-    height: 40%;
+    float: none;
   }
-
+  input[type=text],.search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
   .search-container input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: 1px solid black;
-    background: #ddd;
+    border: 1px solid #ccc;  
   }
-  
-  .search-container button {
-    padding: 6px 10px;
-    margin-top: 8px;
-    background: #ddd;
-    font-size: 17px;
-    border: 1px solid black;
+}
+  #output{
+      padding: 7%;
+      font-weight: bold;
+      font-size: larger;
+  }
+/*Sliding information cards*/
+  #carouselExampleDark{
+      margin-left: 25%;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+  }
+  .card{
+      padding: 7%;
+  }
+  /*Small divider line*/
+  .featurette-divider{
+      margin-left: 40%;
+  }
+  #contact_click a:hover {
+      color: #ffc451;
+  }
+
+/* Newsletter Popup*/
+  #list-builder {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    display: none;
+}
+
+#popup-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffd584;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border: 10px solid #FFFFFF;
+    display: none;
+}
+
+#popup-close {
+    position: absolute;
+    top: -18px;
+    right: -20px;
     cursor: pointer;
-  }
-  
-  .search-container button:hover {
-    background: #ccc;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .search-container {
-      float: none;
-    }
-    input[type=text],.search-container button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .search-container input[type=text] {
-      border: 1px solid #ccc;  
-    }
-  }
-    #output{
-        padding: 7%;
-        font-weight: bold;
-        font-size: larger;
-    }
+    width: 40px;
+}
 
-    #carouselExampleDark{
-        margin-left: 25%;
-        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-    }
-    .card{
-        padding: 7%;
-    }
-    .featurette-divider{
-        margin-left: 40%;
-    }
-    #contact_click a:hover {
-        color: #ffc451;
-    }
+#popup-box h1 {
+    margin: 0;
+    font-size: large;
+}
 
+#popup-box form {
+    margin-bottom: 0px;
+}
 
-    #list-builder {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #333;
-      filter: alpha(opacity=80);
-      opacity: 0.8;
-      display: none;
-  }
-  
-  #popup-box {
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #ffd584;
-      width: 90%;
-      max-width: 600px;
-      padding: 30px;
-      border: 10px solid #FFFFFF;
-      display: none;
-  }
-  
-  #popup-close {
-      position: absolute;
-      top: -18px;
-      right: -20px;
-      cursor: pointer;
-      width: 40px;
-  }
-  
-  #popup-box h1 {
-      margin: 0;
-      font-size: large;
-  }
-  
-  #popup-box form {
-      margin-bottom: 0px;
-  }
-  
-  #popup-box input {
-      padding: 10px;
-      border: 1px solid #333;
-      width: 40%;
-  }
-  
-  #popup-box button {
-      margin-top: 5%;
-      border: 1px solid #333;
-      background-color: white;
-  }
+#popup-box input {
+    padding: 10px;
+    border: 1px solid #333;
+    width: 40%;
+}
+
+#popup-box button {
+    margin-top: 5%;
+    border: 1px solid #333;
+    background-color: white;
+}

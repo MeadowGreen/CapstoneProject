@@ -170,7 +170,7 @@ function alertFunc() {
     }
   });
 
-  // Porfolio isotope and filter
+  // Portfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -186,7 +186,7 @@ function alertFunc() {
       aos_init();
     });
 
-    // Initiate venobox (lightbox feature used in portofilo)
+    // Initiate venobox (lightbox feature used in portfolio)
     $(document).ready(function() {
       $('.venobox').venobox({
         'share': false
@@ -246,6 +246,7 @@ $(document).ready(function() {
   }
 
   if(((new Date()).getTime() - cookie) / (1000 * 60 * 60 * 24) > cookie_expire) {
+    //Delay function
       $("#list-builder").delay(delay).fadeIn("fast", () => {
           $("#popup-box").fadeIn("fast", () => {});
       });
@@ -260,7 +261,7 @@ $(document).ready(function() {
               }
           });
       });
-
+//CLose out button
       $("#popup-close").click(() => {
           $("#list-builder, #popup-box").hide();
           localStorage.setItem("list-builder", (new Date()).getTime());
